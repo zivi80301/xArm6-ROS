@@ -1,0 +1,6 @@
+<launch>
+    <node name="pos_rot_sub" pkg="xarm_bringup" type="setpoint_sub.py" output="screen"/>
+    <node name="joint_state_pub" pkg="xarm_bringup" type="joint_state_publisher.py" output="screen"/>
+    <node name="reset_server" pkg="xarm_bringup" type="reset.py" output="screen"/>
+    <node name="clear_error_server" pkg="xarm_bringup" type="clear_err.py" output="screen"/>
+</launch>
