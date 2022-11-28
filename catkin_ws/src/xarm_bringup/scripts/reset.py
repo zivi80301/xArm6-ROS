@@ -22,7 +22,7 @@ def callback(req):
     arm.motion_enable(True,8)
     arm.set_mode(mode=0)
     arm.set_state(state=0)
-    arm.reset(wait=True)
+    arm.reset(wait=True, is_radian=False, speed = 7.5)
 
     return []
 
