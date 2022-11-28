@@ -1,6 +1,8 @@
 # xArm6-ROS
 The catkin workspace used to control the xArm6 with Unity @ HRL
 
+The other half of this project can be found here: https://github.com/zivi80301/xArm6-Unity_controller
+
 This must be placed in the home folder of your Ubuntu 20.04 subsystem. Navigate to the catkin_ws directory in your Ubuntu terminal and build the catkin workspace with 
 ```
 catkin_make
