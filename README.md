@@ -9,7 +9,7 @@ catkin_make
 ```
 Then source it automatically through your .bashrc by adding
 ```
-source ~/ catkin_ws / devel / setup . bash
+source ~/catkin_ws/devel/setup.bash
 ```
 to the very end of your .bashrc file, which can be found in the home directory of your Ubuntu subsystem.
 
