@@ -19,10 +19,11 @@ arm = XArmAPI('192.168.1.217')
 #Service callback, executed on service call. Enables joints, sets mode and state to 0 and homes robot arm
 def callback(req):
     print("Resetting xArm")
+    joints = [0,-78,0,0,78,0]
     arm.motion_enable(True,8)
     arm.set_mode(mode=0)
     arm.set_state(state=0)
-    arm.reset(wait=True, is_radian=False, speed = 7.5)
+    arm.set_servo_angle(servo_id=8, angle=joints, speed=7.5, is_radian=False)
 
     return []
 
@@ -33,4 +34,5 @@ def reset_server():
     rospy.spin()
 
 if __name__ == '__main__':
+    #print("this node has been started")
     reset_server()

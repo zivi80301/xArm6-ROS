@@ -24,7 +24,6 @@ def talker():
 
         jointStates = JointStates()
 
-        #angles = arm.last_used_angles
         angles = arm.get_joint_states(is_radian=False)[1][0]
 
         jointStates.j1 = int(angles[0])
